@@ -1,0 +1,104 @@
+<html><head><title>Zodiacfinder</title>
+<SCRIPT Language="JavaScript">
+function showzodiac()
+{
+ var d,m,z;
+ d=document.frmzodiac.txtdate.value;
+ m=document.frmzodiac.txtmonth.value;
+ if(m=="january")
+ {
+ if(d<=19)
+ z="Capricon";
+ else
+ z="Aquarius";
+ }
+ if(m=="february")
+ {
+ if(d<=19)
+ z="Aquarius";
+ else
+ z="Pisces";
+ }
+ if(m=="march")
+ {
+ if(d<=20)
+ z="Pisces";
+ else
+ z="Aries";
+ }
+ if(m=="april")
+ {
+ if(d<=20)
+ z="Aries";
+ else
+ z="Taurus";
+ }
+ if(m=="may")
+ {
+ if(d<=20)
+ z="Taurus";
+ else
+ z="Gemini";
+ }
+ if(m=="june")
+ {
+ if(d<=20)
+ z="Gemini";
+ else
+ z="Cancer";
+ }
+ if(m=="july")
+ {
+ if(d<=22)
+ z="Cancer";
+ else
+ z="Leo";
+ }
+ if(m=="august")
+ {
+ if(d<=22)
+ z="Leo";
+ else
+ z="Virgio";
+ }
+ if(m=="september")
+ {
+ if(d<=22)
+ z="Virgo";
+ else
+ z="Libra";
+ }
+ if(m=="october")
+ {
+ if(d<=22)
+ z="Libra";
+ else
+ z="Scorpio";
+ }
+ if(m=="november")
+ {
+ if(d<=22)
+ z="Scorpio";
+ else
+ z="Sagattarius";
+ }
+ if(m=="december")
+ {
+ if(d<=21)
+ z="Sagattarius";
+ else
+ z="Capricon";
+ }
+ document.frmzodiac.txtz.value=z;
+}
+ </SCRIPT>
+ </HEAD>
+ <BODY Background="zodiac back.jpg" text="red">
+ <center><h1>Zodiac Finder</h1></center><br><br><br>
+ <center><FORM Name="frmzodiac">
+ Enter day no:&nbsp &nbsp &nbsp <input Type="text" Name="txtdate"><br><br><br>
+ Enter month in lowercase: &nbsp &nbsp &nbsp <input Type="text" Name="txtmonth"><br><br><br>
+ Zodiac sign is:&nbsp &nbsp &nbsp<input Type="text" Name="txtz"><br><br><br>
+ <input type="button" value="show" onClick="showzodiac()"></FORM></center><marquee><img src="zodimage.jpg" height="300" width="300"></marquee></BODY></HTML>
+ 
+ 
